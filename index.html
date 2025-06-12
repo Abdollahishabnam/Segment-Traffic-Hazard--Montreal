@@ -66,17 +66,16 @@
       attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    function getColor(level) {
-      switch (level) {
-        case 'Safe': return 'blue';
-        case 'Acceptable': return 'green';
-        case 'Somewhat hazardous': return 'orange';
-        case 'Hazardous': return 'red';
-        case 'Very Hazardous': return 'darkred';
-        default: return 'gray';
-      }
-    }
-
+  function getColor(level) {
+  switch (level) {
+    case 'Safe': return 'blue';
+    case 'Acceptable': return 'green';
+    case 'Somewhat Hazardous': return 'orange';
+    case 'Hazardous': return 'red';
+    case 'Very Hazardous': return 'darkred'; // ✅ fix the capitalization
+    default: return 'gray';
+  }
+}
     function style(feature) {
       return {
         color: getColor(feature.properties["Hazard level"]),
