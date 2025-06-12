@@ -104,7 +104,7 @@
     let geojsonLayer;
     function loadData(levels) {
       if (geojsonLayer) geojsonLayer.remove();
-      fetch('traffic_hazard_final_interpreted.geojson')
+     fetch('traffic_hazard_final_interpreted_fixed.geojson')
         .then(res => res.json())
         .then(data => {
           const filtered = {
