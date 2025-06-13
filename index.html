@@ -51,7 +51,7 @@
 <div class="legend">
   <strong>Legend</strong><br>
   <i style="background: blue"></i> Safe<br>
-  <i style="background: lightblue"></i> Acceptable<br> <!-- updated here too -->
+  <i style="background: lightblue"></i> Acceptable<br> 
   <i style="background: orange"></i> Somewhat Hazardous<br>
   <i style="background: red"></i> Hazardous<br>
   <i style="background: darkred"></i> Very Hazardous<br>
@@ -68,7 +68,7 @@
     function getColor(level) {
       switch (level) {
         case 'Safe': return 'blue';
-        case 'Acceptable': return 'green';
+        case 'Acceptable': return 'lightblue';
         case 'Somewhat Hazardous': return 'orange';
         case 'Hazardous': return 'red';
         case 'Very Hazardous': return 'darkred';
